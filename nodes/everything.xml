@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no"?>
+
+<kickstart>
+
+	<description>
+	Dummy empty node for building the OS Roll, this is the
+	root of everything in the graph
+	</description>
+
+	<changelog>
+	$Log: everything.xml,v $
+	Revision 1.6  2008/03/25 19:48:05  bruno
+	tweaks for building the OS roll
+	
+	Revision 1.5  2006/06/26 22:24:03  bruno
+	tweaks in order to build OS roll for rocks 4.2
+	
+	Revision 1.4  2005/10/05 22:52:39  bruno
+	make sure the uniprocessor kernel roll is included in the OS roll
+	
+	Revision 1.3  2005/05/25 22:42:46  bruno
+	needed to add some more kernel RPMs to everything node
+	
+	Revision 1.2  2005/04/27 17:28:06  mjk
+	empty node file
+	
+	</changelog>
+
+	<package>kernel</package>
+	<package>kernel-devel</package>
+
+	<package arch="i386">kernel-PAE</package>
+	<package arch="i386">kernel-PAE-devel</package>
+
+</kickstart> 
+
