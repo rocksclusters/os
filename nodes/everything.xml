@@ -9,6 +9,10 @@
 
 	<changelog>
 	$Log: everything.xml,v $
+	Revision 1.7  2008/06/23 20:53:04  bruno
+	make sure some gtkhtml2 packages are included in the OS roll. these are
+	used to correctly build the rocks-boot package.
+	
 	Revision 1.6  2008/03/25 19:48:05  bruno
 	tweaks for building the OS roll
 	
@@ -31,6 +35,9 @@
 
 	<package arch="i386">kernel-PAE</package>
 	<package arch="i386">kernel-PAE-devel</package>
+
+	<package>gtkhtml2</package>
+	<package>gnome-python2-gtkhtml2</package>
 
 </kickstart> 
 
