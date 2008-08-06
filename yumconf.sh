@@ -15,4 +15,4 @@ reposdir=$PWD
 
 [rocks-dist-os]
 name=rocks-dist-os
-baseurl=file://$PWD/rocks-dist-os/lan/\$basearch"
+baseurl=file://$PWD/rocks-dist-os/\$basearch"

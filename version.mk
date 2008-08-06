@@ -1,7 +1,7 @@
 RELEASE		= 0
 COLOR		= white
 
-ROLLDIR		= $(shell rocks-dist --path="mirrors[0].getRollsPath" paths)
+ROLLDIR		= $(shell rocks report distro)/rolls
 
 CENTOS_VERSION	= \
 	$(shell rocks list roll CentOS output-header=no output-col=version)

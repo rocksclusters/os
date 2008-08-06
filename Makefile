@@ -1,5 +1,5 @@
 #
-# $Id: Makefile,v 1.16 2008/04/03 15:41:55 bruno Exp $
+# $Id: Makefile,v 1.17 2008/08/06 21:06:57 bruno Exp $
 #
 # @Copyright@
 # 
@@ -55,6 +55,9 @@
 # @Copyright@
 #
 # $Log: Makefile,v $
+# Revision 1.17  2008/08/06 21:06:57  bruno
+# fixes to build OS roll
+#
 # Revision 1.16  2008/04/03 15:41:55  bruno
 # automate OS roll building
 #
@@ -116,8 +119,6 @@ ROLLSROOT	= ..
 include Rolls.mk
 
 default: roll
-
-yumconf:
 
 pretar:: graph.py
 	-mkdir -p graphs/default
