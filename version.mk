@@ -1,3 +1,4 @@
+ROLLNAME	= os
 RELEASE		= 0
 COLOR		= white
 
