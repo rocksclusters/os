@@ -1,16 +1,19 @@
 ROLLNAME	= os
 RELEASE		= 0
 COLOR		= white
+OSNAME		= CentOS
+OSVERSION 	= 5.6
+UPDATESNAME	= Updates-$(OSNAME)-$(OSVERSION)
 
 ROLLDIR		= $(shell rocks report distro)/rolls
 
 CENTOS_VERSION	= \
-	$(shell rocks list roll CentOS output-header=no output-col=version)
+	$(shell rocks list roll $(OSNAME) output-header=no output-col=version)
 UPDATES_VERSION	= \
-	$(shell rocks list roll updates output-header=no output-col=version)
+	$(shell rocks list roll $(UPDATESNAME) output-header=no output-col=version)
 KERNEL_VERSION	= \
 	$(shell rocks list roll kernel output-header=no output-col=version)
 
-ROLLS		= CentOS,$(CENTOS_VERSION) updates,$(UPDATES_VERSION)
+ROLLS		= $(OSNAME),$(CENTOS_VERSION) $(UPDATESNAME),$(UPDATES_VERSION)
 REDHAT.ROOT	= $(PWD)
 
