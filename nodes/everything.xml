@@ -9,6 +9,9 @@
 
 	<changelog>
 	$Log: everything.xml,v $
+	Revision 1.8  2012/04/02 03:21:38  phil
+	Some more packages for 6 OS roll
+	
 	Revision 1.7  2008/06/23 20:53:04  bruno
 	make sure some gtkhtml2 packages are included in the OS roll. these are
 	used to correctly build the rocks-boot package.
@@ -39,5 +42,21 @@
 	<package>gtkhtml2</package>
 	<package>gnome-python2-gtkhtml2</package>
 
+<!-- Some additional Packages for more complete support on CentOS 6 -->
+	<package>device-mapper-multipath-libs</package>
+	<package>fcoe-utils</package>
+	<package>ipmitool</package>
+	<package>isomd5sum</package>
+	<package>libarchive</package>
+	<package>libhbalinux</package>
+	<package>lldpad</package>
+	<package>lvm2</package>
+	<package>lvm2-libs</package>
+	<package>makebootfat</package>
+	<package>python-cryptsetup</package>
+	<package>python-nss</package>
+	<package>tigervnc</package>
+	<package>tigervnc-server</package>
+	<package>wodim</package>
 </kickstart> 
 
