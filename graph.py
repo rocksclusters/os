@@ -1,6 +1,6 @@
 #!/opt/rocks/bin/python
 #
-# $Id: graph.py,v 1.15 2011/07/23 02:31:15 phil Exp $
+# $Id: graph.py,v 1.16 2012/04/03 23:04:58 phil Exp $
 #
 # @Copyright@
 # 
@@ -56,6 +56,10 @@
 # @Copyright@
 #
 # $Log: graph.py,v $
+# Revision 1.16  2012/04/03 23:04:58  phil
+# Add bootstrap-packages to the list. This should get the lion's share of
+# packages required for building compilation.
+#
 # Revision 1.15  2011/07/23 02:31:15  phil
 # Viper Copyright
 #
@@ -126,6 +130,7 @@ class App(rocks.sql.Application):
 		for node in self.fetchall():
 			if node not in list:
 				list.append(node)
+		list.append("bootstrap-packages")
 				
 		print '<?xml version="1.0" standalone="no"?>'
 		print ''
