@@ -9,6 +9,9 @@
 
 	<changelog>
 	$Log: everything.xml,v $
+	Revision 1.9  2012/07/10 18:40:19  phil
+	Update Anaconda for CentOS 6.3.  Add lsscsi and pyparted to os roll inventory
+	
 	Revision 1.8  2012/04/02 03:21:38  phil
 	Some more packages for 6 OS roll
 	
@@ -50,9 +53,11 @@
 	<package>libarchive</package>
 	<package>libhbalinux</package>
 	<package>lldpad</package>
+	<package>lsscsi</package>
 	<package>lvm2</package>
 	<package>lvm2-libs</package>
 	<package>makebootfat</package>
+	<package>pyparted</package>
 	<package>python-cryptsetup</package>
 	<package>python-nss</package>
 	<package>tigervnc</package>
