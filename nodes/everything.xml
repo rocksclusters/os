@@ -9,6 +9,9 @@
 
 	<changelog>
 	$Log: everything.xml,v $
+	Revision 1.10  2012/07/12 04:59:16  phil
+	Packages needed to rebuild kernel roll using just base,kernel,os rolls
+	
 	Revision 1.9  2012/07/10 18:40:19  phil
 	Update Anaconda for CentOS 6.3.  Add lsscsi and pyparted to os roll inventory
 	
@@ -46,6 +49,7 @@
 	<package>gnome-python2-gtkhtml2</package>
 
 <!-- Some additional Packages for more complete support on CentOS 6 -->
+	<package>comps-extras</package>
 	<package>device-mapper-multipath-libs</package>
 	<package>fcoe-utils</package>
 	<package>ipmitool</package>
@@ -60,8 +64,10 @@
 	<package>pyparted</package>
 	<package>python-cryptsetup</package>
 	<package>python-nss</package>
+	<package>system-config-firewall-base</package>
 	<package>tigervnc</package>
 	<package>tigervnc-server</package>
 	<package>wodim</package>
+	<package>yum-utils</package>
 </kickstart> 
 

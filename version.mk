@@ -5,7 +5,7 @@ OSNAME		= CentOS
 ifeq ($(VERSION.MAJOR), 5)
 OSVERSION	= 5.8
 else
-OSVERSION 	= 6.2
+OSVERSION 	= 6.3
 endif
 
 UPDATESNAME	= Updates-$(OSNAME)-$(OSVERSION)
