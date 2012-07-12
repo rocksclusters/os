@@ -9,6 +9,9 @@
 
 	<changelog>
 	$Log: everything.xml,v $
+	Revision 1.11  2012/07/12 22:28:32  phil
+	Additional packages needed in OS roll to successfully rebuild the kernel roll
+	
 	Revision 1.10  2012/07/12 04:59:16  phil
 	Packages needed to rebuild kernel roll using just base,kernel,os rolls
 	
@@ -69,5 +72,68 @@
 	<package>tigervnc-server</package>
 	<package>wodim</package>
 	<package>yum-utils</package>
+
+<!-- Packages required to rebuild kernel roll -->
+	<package>biosdevname</package>
+	<package>bitmap-fangsongti-fonts</package>
+	<package>cjkuni-fonts-common</package>
+	<package>cjkuni-uming-fonts</package>
+	<package>dejavu-lgc-sans-fonts</package>
+	<package>dejavu-lgc-sans-mono-fonts</package>
+	<package>dejavu-lgc-serif-fonts</package>
+	<package>dejavu-sans-fonts</package>
+	<package>dejavu-sans-mono-fonts</package>
+	<package>dejavu-serif-fonts</package>
+	<package>efibootmgr</package>
+	<package>firstaidkit-engine</package>
+	<package>fontconfig</package>
+	<package>fontpackages-filesystem</package>
+	<package>gdb-gdbserver</package>
+	<package>libmlx4</package>
+	<package>libproxy-python</package>
+	<package>libreport-cli</package>
+	<package>libreport-plugin-bugzilla</package>
+	<package>libreport-plugin-logger</package>
+	<package>libsemanage-python</package>
+	<package>libtalloc</package>
+	<package>lklug-fonts</package>
+	<package>lohit-assamese-fonts</package>
+	<package>lohit-bengali-fonts</package>
+	<package>lohit-devanagari-fonts</package>
+	<package>lohit-gujarati-fonts</package>
+	<package>lohit-kannada-fonts</package>
+	<package>lohit-oriya-fonts</package>
+	<package>lohit-punjabi-fonts</package>
+	<package>lohit-tamil-fonts</package>
+	<package>lohit-telugu-fonts</package>
+	<package>madan-fonts</package>
+	<package>module-init-tools</package>
+	<package>python-volume_key</package>
+	<package>samba-common</package>
+	<package>samba-winbind-clients</package>
+	<package>sg3_utils</package>
+	<package>smc-anjalioldlipi-fonts</package>
+	<package>smc-dyuthi-fonts</package>
+	<package>smc-fonts-common</package>
+	<package>smc-kalyani-fonts</package>
+	<package>smc-meera-fonts</package>
+	<package>smc-rachana-fonts</package>
+	<package>smc-raghumalayalam-fonts</package>
+	<package>smc-suruma-fonts</package>
+	<package>tigervnc-server-module</package>
+	<package>un-core-batang-fonts</package>
+	<package>un-core-dinaru-fonts</package>
+	<package>un-core-dotum-fonts</package>
+	<package>un-core-graphic-fonts</package>
+	<package>un-core-gungseo-fonts</package>
+	<package>un-core-pilgi-fonts</package>
+	<package>virt-what</package>
+	<package>vlgothic-fonts</package>
+	<package>vlgothic-fonts-common</package>
+	<package>vlgothic-p-fonts</package>
+	<package>volume_key</package>
+	<package>volume_key-libs</package>
+	<package>xfsprogs</package>
+	<package>xorg-x11-fonts-ethiopic</package>
 </kickstart> 
 
