@@ -9,6 +9,9 @@
 
 	<changelog>
 	$Log: everything.xml,v $
+	Revision 1.12  2012/09/05 00:51:16  clem
+	Added extra packages for installing EC2 roll with the required OS roll
+	
 	Revision 1.11  2012/07/12 22:28:32  phil
 	Additional packages needed in OS roll to successfully rebuild the kernel roll
 	
@@ -72,6 +75,11 @@
 	<package>tigervnc-server</package>
 	<package>wodim</package>
 	<package>yum-utils</package>
+
+<!-- Required for EC2 roll - LC -->
+	<package>ruby-libs</package>
+	<package>ruby</package>
+<!-- End Required EC2 rolls -->
 
 <!-- Packages required to rebuild kernel roll -->
 	<package>biosdevname</package>
