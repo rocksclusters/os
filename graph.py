@@ -137,7 +137,7 @@ class App(rocks.sql.Application):
 		self.execute('select node from appliances where node != ""')
 		
 		list = []
-		for node in self.fetchall():
+		for node, in self.fetchall():
 			if node not in list:
 				list.append(node)
 		list.append("bootstrap-packages")
