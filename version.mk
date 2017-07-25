@@ -4,8 +4,11 @@ COLOR		= white
 OSNAME		= CentOS
 ifeq ($(VERSION.MAJOR), 5)
 OSVERSION	= 5.8
-else
+endif
+ifeq ($(VERSION.MAJOR), 6)
 OSVERSION 	= 6.8
+else
+OSVERSION 	= 7.3.1611
 endif
 
 UPDATESNAME	= Updates-$(OSNAME)-$(OSVERSION)

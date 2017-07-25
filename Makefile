@@ -144,9 +144,17 @@ pretar:: graph.py
 	./graph.py > graphs/default/os.xml
 	./yumconf.sh > yum.conf
 	-mkdir -p $(ROLLDIR)/CentOS/$(CENTOS_VERSION)/$(ARCH)/RedHat/base
+ifeq ($(VERSION.MAJOR), 6)
 	cp $(ROLLDIR)/kernel/$(KERNEL_VERSION)/$(ARCH)/RedHat/base/comps.xml \
 		$(ROLLDIR)/CentOS/$(CENTOS_VERSION)/$(ARCH)/RedHat/base
-	
+endif	
+ifeq ($(VERSION.MAJOR), 7)
+	rocks create distro
+	cp  rocks-dist/$(ARCH)/RedHat/base/comps.xml \
+		$(ROLLDIR)/CentOS/$(CENTOS_VERSION)/$(ARCH)/RedHat/base
+	-/bin/rm -rf rocks-dist
+endif	
+
 
 clean::
 	rm -f graphs/default/os.xml yum.conf yum.log
