@@ -1,0 +1,20 @@
+<kickstart>
+<description>
+Additional packages required in the trimmed OS roll. These are packages
+that aren't being picked up through normal resolution.
+</description>
+<package>libdnet</package>
+<package>libdnet-devel</package>
+<package>libmspack</package>
+<package>libmspack-devel</package>
+<package>gtk2-devel</package>
+<package>gtkmm24-devel</package>
+<package>glibmm24-devel</package>
+<package>atkmm-devel</package>
+<package>cairomm-devel</package>
+<package>pangomm-devel</package>
+<package>thai-scalable-fonts-common</package>
+<package>open-vm-tools-desktop</package>
+<package>open-vm-tools</package>
+<package>cairomm</package>
+</kickstart>

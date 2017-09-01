@@ -125,6 +125,7 @@
 
 import sys
 import rocks.sql
+import rocks
 
 class App(rocks.sql.Application):
 
@@ -139,8 +140,11 @@ class App(rocks.sql.Application):
 		for node, in self.fetchall():
 			if node not in list:
 				list.append(node)
-		list.append("bootstrap-packages")
+		list.append("bootstrap-packages-core")
+		list.append("bootstrap-packages-base")
 		list.append("perl-modules")
+		if rocks.version_major == '7':
+			list.append("os-roll-packages-7")
 				
 		print '<?xml version="1.0" standalone="no"?>'
 		print ''
