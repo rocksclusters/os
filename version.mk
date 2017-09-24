@@ -8,7 +8,7 @@ endif
 ifeq ($(VERSION.MAJOR), 6)
 OSVERSION 	= 6.8
 else
-OSVERSION 	= 7.3.1611
+OSVERSION 	= 7.4.1708
 endif
 
 UPDATESNAME	= Updates-$(OSNAME)-$(OSVERSION)
